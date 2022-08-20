@@ -67,21 +67,26 @@ ul li {
   display: flex;
   margin-top: 40px;
   padding-bottom: 40px;
+  justify-content: space-around;
   align-items: center;
+}
+
+.left-side {
+  width: 100%;
 }
 
 .left-side img {
   width: 400px;
-  margin: 0 90px;
+  padding: 0 90px;
 }
 
 .header-banner .right-side {
-  width: 60%;
+  /* width: 60%; */
   color: #fff;
   width: auto;
 }
 
-.right-side .h-title {
+.right-side .h-title h1 {
   font-size: 3.5rem;
   line-height: 1.2;
   font-weight: 700;
@@ -216,11 +221,13 @@ ul li {
 }
 
 .content-part {
-  margin-right: 40px;
+  width: 55%;
 }
 
 .content-part h1 {
   font-size: 2.5rem;
+  font-family: 'open sans';
+
 }
 
 .content-part p {
@@ -241,21 +248,15 @@ ul li {
 
 .service {
   display: flex;
-  justify-content: space-around;
+  gap: 50px;
+  justify-content: space-between;
   align-items: center;
   margin-top: 50px;
 }
 
 .img-part {
-  /* padding-right: 40px; */
+  width: 45%;
 }
-
-.img-part img {
-  width: 500px;
-}
-
-
-
 
 
 /* team  */
@@ -349,4 +350,130 @@ ul li {
   font-size: 14px;
   font-weight: 200;
 
+}
+
+@media (max-width:768px) {
+  .banner-2 .service {
+    flex-direction: column;
+  }
+
+  .content-part {
+    order: 5;
+  }
+}
+
+@media (min-width:320px)and (max-width:480px) {
+  .banner-2 .service {
+    flex-direction: column;
+  }
+
+  .service .img-part {
+    width: 80%;
+  }
+
+  .content-part {
+    order: 5;
+  }
+
+  .banner-2 h1 {
+    font-size: 2rem;
+  }
+
+  .content-part {
+    width: 100%;
+  }
+
+  .content-part h1 {
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .content-part p {
+    line-height: 1.5;
+  }
+
+  .btngroup {
+    margin: 0 auto;
+  }
+
+  .team-header {
+    flex-direction: column;
+  }
+
+  .team-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .profiles {
+    flex-direction: column;
+  }
+
+  .profile {
+    margin-bottom: 50px;
+  }
+
+  .footer .f-logo img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .f-buttons {
+    margin-bottom: 50px;
+  }
+
+  .fcolumns {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .parts {
+    flex-wrap: wrap;
+  }
+
+  .part {
+    margin-bottom: 50px;
+  }
+
+  .navitem {
+    display: none;
+  }
+
+  .header-banner {
+    flex-direction: column;
+  }
+
+  .header-banner .left-side img {
+    padding: 0 40px;
+
+  }
+
+  .header-banner .right-side {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .right-side .h-title h1 {
+    font-size: 2.5rem;
+    /* text-align: center; */
+  }
+
+  .right-side .h-desc {
+    line-height: 1.5;
+  }
+
+  .h-email .form-group {
+    width: 100%;
+  }
+
+  nav i {
+    font-size: 2rem;
+    color: #ffffff;
+  }
+
+  nav i{
+margin-right: 50px;
+margin-top: 40px;
+  }
 }
