@@ -100,17 +100,27 @@ ul li {
   font-family: 'open sans';
 }
 
+.h-email {
+  display: flex;
+  align-items: center;
+}
 
 .form-group {
   background-color: #fff;
   padding: 2px;
-  width: 520px;
+  width: 500px;
   display: flex;
   align-items: center;
 }
 
 .form-group img {
   margin-left: 15px;
+}
+
+input {
+  height: 50px;
+  font-size: 2rem;
+  outline: none;
 }
 
 .form-control {
@@ -446,7 +456,7 @@ ul li {
 
   .header-banner .left-side img {
     padding: 0 40px;
-
+    width: 300px;
   }
 
   .header-banner .right-side {
@@ -472,8 +482,20 @@ ul li {
     color: #ffffff;
   }
 
-  nav i{
-margin-right: 50px;
-margin-top: 40px;
+  nav i {
+    margin-right: 50px;
+    margin-top: 40px;
+  }
+
+  .form-control {
+    padding-right: 0px;
+  }
+
+  .h-email {
+    flex-direction: column;
+  }
+
+  .form-group {
+    display: block
   }
 }

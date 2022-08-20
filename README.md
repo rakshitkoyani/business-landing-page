@@ -26,4 +26,4 @@ It takes me around 8 hours to complete me this project.
 
 ## Live link of the project
 
-https://app.netlify.com/sites/rakshit-business-landingpage
+https://rakshit-business-landingpage.netlify.app/
