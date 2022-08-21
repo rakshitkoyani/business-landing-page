@@ -370,6 +370,15 @@ input {
   .content-part {
     order: 5;
   }
+
+  .header-banner {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .header-banner .right-side {
+    margin: 0 auto;
+  }
 }
 
 @media (min-width:320px)and (max-width:480px) {
