@@ -52,6 +52,17 @@ ul li {
   cursor: pointer;
 }
 
+.fas {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-right: 50px;
+  margin-top: 40px;
+}
+
+.menu-icon {
+  display: none;
+}
+
 .btngroup {
   background-color: #8BB7A2;
   border: none;
@@ -136,10 +147,6 @@ input {
 .main-container {
   margin: 40px 90px;
 
-}
-
-.connect {
-  /* margin: 40px 90px; */
 }
 
 .connect-heading {
@@ -367,6 +374,10 @@ input {
     flex-direction: column;
   }
 
+  .menu-icon {
+    display: none;
+  }
+
   .content-part {
     order: 5;
   }
@@ -486,14 +497,8 @@ input {
     width: 100%;
   }
 
-  nav i {
-    font-size: 2rem;
-    color: #ffffff;
-  }
-
-  nav i {
-    margin-right: 50px;
-    margin-top: 40px;
+  .menu-icon {
+    display: inline;
   }
 
   .form-control {
