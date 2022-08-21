@@ -374,6 +374,10 @@ input {
     flex-direction: column;
   }
 
+  .profiles {
+    flex-wrap: wrap;
+  }
+
   .menu-icon {
     display: none;
   }
